@@ -1,0 +1,26 @@
+/* MovieList.css */
+
+.movie-list-container {
+    display: flex;
+    justify-content: center; /* Центрирование рядов по горизонтали */
+  }
+  
+  .movie-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрирование карточек по горизонтали */
+  }
+  
+  .movie-card-container {
+    
+    
+    margin: 10px; /* Добавление отступов между карточками */
+  }
+  
+  /* Стили для изображения внутри карточки */
+  .movie-card-container img {
+    height: 100%; /* Занимает всю высоту карточки */
+    width: 100%; /* Занимает всю ширину карточки */
+    object-fit: cover; /* Сохраняет пропорции изображения и заполняет доступное пространство */
+  }
+  

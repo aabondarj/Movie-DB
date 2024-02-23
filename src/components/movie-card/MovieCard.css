@@ -1,3 +1,67 @@
 .ant-card {
-    height: 100%;
+  height: 100%;
+}
+
+.img-poster {
+  max-width: 300px;
+}
+
+/* Общие стили для картинки внутри карточки */
+.movie-card-container img {
+  height: 100%; /* Занимает всю высоту карточки */
+  width: 100%; /* Занимает всю ширину карточки */
+  object-fit: cover; /* Сохраняет пропорции изображения и заполняет доступное пространство */
+}
+  
+/* Стили для заголовка фильма */
+.movie-card-title {
+  margin: 0;
+  margin-bottom: 5px; /* Добавление отступа снизу */
+}
+  
+/* Стили для рейтинга фильма в кружочке */
+.movie-card-rating {
+  background-color: transparent; /* Цвет фона кружочка */
+  color: #000; /* Цвет текста внутри кружочка */
+  width: 30px; /* Ширина кружочка */
+  height: 30px; /* Высота кружочка */
+  border: 2px solid;
+  border-radius: 50%; /* Создание круглой формы */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+}
+
+.desktop-description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.desktop-description ul {
+  margin-left: auto;
+}
+
+.mobile-description {
+  display: none;
+}
+
+@media (max-width: 640px) {
+
+  .img-poster {
+    width: 95px;
+  }
+  .desktop-description {
+    display: none;
+  }
+  .mobile-description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mobile-description ul {
+    margin-left: auto;
+  }
+
 }

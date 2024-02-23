@@ -1,5 +1,9 @@
 /* App.css */
 
+.ant-tabs-nav-wrap {
+  justify-content: center;
+}
+
 @media (max-width: 640px) {
     .movie-card-container {
       width: 100%;
